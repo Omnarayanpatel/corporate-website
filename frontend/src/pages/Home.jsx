@@ -1,14 +1,43 @@
 import Hero from "../sections/Hero";
 import ServicesSection from "../sections/ServicesSection";
 import ProductSection from "../sections/ProductSection";
-import { aboutPoints, companyInfo, processSteps, stats } from "../data/companyData";
+import { aboutPoints, companyInfo, stats } from "../data/companyData";
+import useRevealOnScroll from "../hooks/useRevealOnScroll";
+
+const processCards = [
+  {
+    icon: "AI",
+    title: "Analyze",
+    tags: ["AI/ML", "Data review"],
+    step: "Understand the AI/ML problem, data challenge, or software need in practical terms.",
+  },
+  {
+    icon: "BU",
+    title: "Build",
+    tags: ["Fast delivery", "Automation"],
+    step: "Design a fast, scalable solution flow across data, product, automation, or cloud layers.",
+  },
+  {
+    icon: "DP",
+    title: "Deliver",
+    tags: ["Production ready", "Scale"],
+    step: "Build, validate, and optimize the final system for reliable delivery and long-term business use.",
+  },
+];
 
 function Home() {
+  const trustReveal = useRevealOnScroll();
+  const storyReveal = useRevealOnScroll();
+  const processReveal = useRevealOnScroll();
+
   return (
     <main>
       <Hero />
 
-      <section className="section trust-strip-section">
+      <section
+        ref={trustReveal.ref}
+        className={`section trust-strip-section reveal-section ${trustReveal.isVisible ? "is-visible" : ""}`}
+      >
         <div className="container">
           <div className="trust-strip">
             <div>
@@ -30,7 +59,10 @@ function Home() {
       <ServicesSection />
       <ProductSection />
 
-      <section className="section home-story-section">
+      <section
+        ref={storyReveal.ref}
+        className={`section home-story-section reveal-section ${storyReveal.isVisible ? "is-visible" : ""}`}
+      >
         <div className="container split-section split-section--story">
           <div>
             <p className="eyebrow">Why Dhritii.ai</p>
@@ -76,22 +108,36 @@ function Home() {
         </div>
       </section>
 
-      <section className="section section--accent">
+      <section
+        ref={processReveal.ref}
+        className={`section section--accent reveal-section ${processReveal.isVisible ? "is-visible" : ""}`}
+      >
         <div className="container">
           <div className="section-heading">
             <div>
               <p className="eyebrow">Our Process</p>
-              <h2>Structured execution for scalable outcomes.</h2>
+              <h2>AI/ML-first execution for fast, scalable outcomes.</h2>
             </div>
             <p>
-              Every delivery track is designed to stay useful in production, not just look good in a demo.
+              Every delivery track is designed to move fast, stay useful in production, and give you a practical result.
             </p>
           </div>
-          <div className="timeline-grid timeline-grid--elevated">
-            {processSteps.map((step, index) => (
-              <article key={step} className="timeline-card timeline-card--elevated">
-                <span>0{index + 1}</span>
-                <p>{step}</p>
+          <div className="timeline-grid timeline-grid--elevated timeline-grid--process">
+            {processCards.map((item, index) => (
+              <article key={item.title} className="timeline-card timeline-card--elevated timeline-card--process">
+                <div className="timeline-card--process__top">
+                  <span className="timeline-card--process__icon" aria-hidden="true">
+                    {item.icon}
+                  </span>
+                  <span className="timeline-card--process__step">0{index + 1}</span>
+                </div>
+                <h3>{item.title}</h3>
+                <p>{item.step}</p>
+                <div className="timeline-card--process__tags">
+                  {item.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
+                </div>
               </article>
             ))}
           </div>

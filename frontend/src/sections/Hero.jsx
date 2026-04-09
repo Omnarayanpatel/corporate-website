@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/images/Futuristic eco-tech logo design.png";
 import { companyInfo, highlights } from "../data/companyData";
+import useRevealOnScroll from "../hooks/useRevealOnScroll";
 
 function Hero() {
+  const { ref, isVisible } = useRevealOnScroll({ threshold: 0.12 });
+
   return (
-    <section className="hero-section">
+    <section ref={ref} className={`hero-section reveal-section ${isVisible ? "is-visible" : ""}`}>
       <div className="container hero-grid">
         <div className="hero-copy-wrap">
           <p className="eyebrow">Smart Innovation Partner</p>

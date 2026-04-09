@@ -1,9 +1,13 @@
 import { companyInfo } from "../data/companyData";
+import useRevealOnScroll from "../hooks/useRevealOnScroll";
 
 function Contact() {
+  const heroReveal = useRevealOnScroll({ threshold: 0.12 });
+  const contactReveal = useRevealOnScroll();
+
   return (
     <main className="page-shell">
-      <section className="page-hero">
+      <section ref={heroReveal.ref} className={`page-hero reveal-section ${heroReveal.isVisible ? "is-visible" : ""}`}>
         <div className="container">
           <p className="eyebrow">Contact Us</p>
           <h1>Let's build something intelligent together.</h1>
@@ -13,7 +17,10 @@ function Contact() {
         </div>
       </section>
 
-      <section className="section contact-page-section">
+      <section
+        ref={contactReveal.ref}
+        className={`section contact-page-section reveal-section ${contactReveal.isVisible ? "is-visible" : ""}`}
+      >
         <div className="container contact-layout contact-layout--rich">
           <div className="contact-visual-card">
             <div className="contact-visual-card__media">

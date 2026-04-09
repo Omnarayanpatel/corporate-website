@@ -5,7 +5,9 @@ import Careers from "../pages/Careers";
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
 import Products from "../pages/Products";
+import Policy from "../pages/Policy";
 import Services from "../pages/Services";
+import TermsPage from "../pages/TermsPage";
 
 function AppRoutes() {
   return (
@@ -18,6 +20,8 @@ function AppRoutes() {
         <Route path="/products" element={<Products />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<Policy />} />
+        <Route path="/terms" element={<TermsPage />} />
       </Route>
     </Routes>
   );

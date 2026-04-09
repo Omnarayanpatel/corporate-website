@@ -1,18 +1,12 @@
 import Card from "../components/common/Card";
-import { serviceList } from "../data/companyData";
-
-const serviceMedia = [
-  { label: "Vision Data", tone: "blue" },
-  { label: "Medical AI", tone: "green" },
-  { label: "Cloud Stack", tone: "cyan" },
-  { label: "App Build", tone: "blue" },
-  { label: "Automation", tone: "green" },
-  { label: "Growth Ops", tone: "cyan" },
-];
+import { featuredServices } from "../data/companyData";
+import useRevealOnScroll from "../hooks/useRevealOnScroll";
 
 function ServicesSection() {
+  const { ref, isVisible } = useRevealOnScroll();
+
   return (
-    <section className="section section--services-preview">
+    <section ref={ref} className={`section section--services-preview reveal-section ${isVisible ? "is-visible" : ""}`}>
       <div className="container">
         <p className="eyebrow">Services</p>
         <div className="section-heading">
@@ -26,14 +20,16 @@ function ServicesSection() {
         </div>
 
         <div className="cards-grid">
-          {serviceList.slice(0, 6).map((service, index) => (
+          {featuredServices.map((service) => (
             <Card
               key={service.title}
-              badge={service.category}
+              badge={service.badge}
               title={service.title}
               description={service.description}
-              mediaLabel={serviceMedia[index]?.label}
-              mediaTone={serviceMedia[index]?.tone}
+              mediaLabel={service.mediaLabel}
+              mediaTone={service.tone}
+              mediaImage={service.mediaImage}
+              mediaAlt={service.mediaAlt}
             />
           ))}
         </div>

@@ -1,13 +1,23 @@
+import dataAnnotationImage from "../assets/images/image_annotation.jfif";
+import dataClassificationImage from "../assets/images/Data_Classification.jfif";
+import dataCollectionImage from "../assets/images/data_collection.jfif";
+import aiModelSupportImage from "../assets/images/ai_model_support.jfif";
+import transcriptionServicesImage from "../assets/images/Transcription_Services.jfif";
+import medicalAnnotationImage from "../assets/images/Medical-Image-Annotation-Tools-main.webp";
+import selloraCrmImage from "../assets/images/sellora_crm_dashboard.jpeg";
+import hrmsImage from "../assets/images/hrms.jfif";
+import dhritiiAnnotationImage from "../assets/images/dhritii_annotation.png";
+
 export const companyInfo = {
-  name: "Dhritii.ai Pvt. Ltd.",
+  name: "Dhritii.ai ",
   shortName: "Dhritii.ai",
-  tagline: "AI-powered data platforms, SaaS systems, and intelligent business solutions.",
+  tagline: "Driving the Next Era of Smart Innovation",
   description:
     "Dhritii.ai Pvt. Ltd. is an AI-powered data platform and SaaS company delivering intelligent solutions for data annotation, business automation, and enterprise management.",
   address:
     "3rd Floor, Elegant Business Square, Bhanpur, Ayodhya Bypass Road, Bhopal, Madhya Pradesh - 462037",
   email: "info@dhritii.ai",
-  phone: "0755 494 0937",
+  phone: "0755-4557709",
 };
 
 export const highlights = [
@@ -35,7 +45,8 @@ export const services = [
       "AI Model Support",
       "Transcription Services",
     ],
-    description: "High-quality data operations that help AI teams build reliable and scalable models.",
+    description:
+      "Data annotation is the process of labeling, tagging, or transcribing raw data, including images, text, audio, and video, to train Artificial Intelligence (AI) and machine learning models to recognize patterns, understand context, and make accurate predictions.",
   },
   {
     title: "Development Services",
@@ -70,24 +81,120 @@ export const serviceList = services.flatMap((group) =>
   group.items.map((item) => ({ title: item, category: group.title, description: group.description }))
 );
 
+export const featuredServices = [
+  {
+    mediaLabel: "Vision Data",
+    tone: "blue",
+    badge: "AI & Data Services",
+    title: "Data Annotation (Image, Text, Audio, Video)",
+    description:
+      "Data annotation is the process of labeling, tagging, or transcribing raw data, including images, text, audio, and video, to train Artificial Intelligence (AI) and machine learning models to recognize patterns, understand context, and make accurate predictions.",
+    mediaImage: dataAnnotationImage,
+    mediaAlt: "Data annotation example",
+  },
+  {
+    mediaLabel: "Medical AI",
+    tone: "green",
+    badge: "AI & Data Services",
+    title: "Medical Data Annotation",
+    description:
+      "Medical data annotation is the crucial process of labeling healthcare data, such as CT scans, MRIs, X-rays, and clinical notes, to make it machine-readable for training AI and ML models.",
+    mediaImage: medicalAnnotationImage,
+    mediaAlt: "Medical image annotation example",
+  },
+  {
+    mediaLabel: "Cloud Stack",
+    tone: "cyan",
+    badge: "Business & Cloud Services",
+    title: "Data Collection",
+    description:
+      "Data collection is the systematic process of gathering, measuring, and analyzing accurate information from various sources to research, solve problems, or make data-driven decisions.",
+    mediaImage: dataCollectionImage,
+    mediaAlt: "Data collection example",
+  },
+  {
+    mediaLabel: "App Build",
+    tone: "blue",
+    badge: "Development Services",
+    title: "Data Classification",
+    description:
+      "Data classification is the process of organizing data into categories based on its sensitivity, value, and regulatory compliance requirements",
+    mediaImage: dataClassificationImage,
+    mediaAlt: "Data classification example",
+  },
+  {
+    mediaLabel: "Automation",
+    tone: "green",
+    badge: "AI & Data Services",
+    title: "AI Model Support",
+    description:
+      "AI model support encompasses the infrastructure, tools, and platforms enabling the development, deployment, and utilization of machine learning models.",
+    mediaImage: aiModelSupportImage,
+    mediaAlt: "AI model support example",
+  },
+  {
+    mediaLabel: "Growth Ops",
+    tone: "cyan",
+    badge: "AI & Data Services",
+    title: "Transcription Services",
+    description:
+      "Transcription services convert audio or video recordings into written text, commonly used for meetings, legal, medical, or research purposes. ",
+    mediaImage: transcriptionServicesImage,
+    mediaAlt: "Transcription services example",
+  },
+];
+
 export const products = [
   {
     title: "Dhritii.ai Annotation Software",
     status: "Live Product",
     description:
       "A focused data annotation platform built to support structured labeling workflows and scalable AI dataset preparation.",
+    overview:
+      "A product built for annotation teams that need consistency, speed, and quality control across large data sets.",
+    features: [
+      "Image and text labeling workflows",
+      "Review-friendly annotation pipeline",
+      "Dataset organization and export support",
+    ],
+    useCases: ["AI training data prep", "Internal labeling operations", "Quality-reviewed dataset delivery"],
+    outcome: "Helps teams prepare structured data faster with fewer manual errors.",
+    previewImage: dhritiiAnnotationImage,
+    previewAlt: "Dhritii.ai annotation software dashboard",
   },
   {
     title: "Sellora CRM",
     status: "Live Product",
     description:
       "A CRM platform for lead management, customer engagement, business tracking, and centralized workflow visibility.",
+    overview:
+      "A CRM experience designed to help teams track leads, follow up faster, and keep customer activity organized.",
+    features: [
+      "Lead and customer pipeline tracking",
+      "Centralized activity and follow-up view",
+      "Reporting for sales and operations",
+    ],
+    useCases: ["Sales tracking", "Customer follow-up", "Internal pipeline visibility"],
+    outcome: "Gives teams a cleaner view of customer relationships and sales progress.",
+    previewImage: selloraCrmImage,
+    previewAlt: "Sellora CRM dashboard screenshot",
   },
   {
     title: "HRMS",
     status: "Coming Soon",
     description:
       "An HRMS system designed to streamline employee operations, records, attendance workflows, and internal management.",
+    overview:
+      "An HR operations platform focused on attendance, employee records, and day-to-day workforce administration.",
+    features: [
+      "Employee profile and record management",
+      "Attendance and workflow tracking",
+      "Internal HR process automation",
+    ],
+    useCases: ["Employee management", "Attendance workflows", "HR process coordination"],
+    outcome: "Will streamline internal HR tasks into one organized system.",
+    previewImage: hrmsImage,
+    previewAlt: "HRMS dashboard preview",
   },
 ];
 
@@ -99,9 +206,9 @@ export const aboutPoints = [
 ];
 
 export const processSteps = [
-  "Understand the business problem, data challenge, or software need in practical terms.",
-  "Design a scalable solution flow across data, product, automation, or cloud layers.",
-  "Build, validate, and optimize the final system for long-term business use.",
+  "Understand the AI&ML problem, data challenge, or software need in practical terms.",
+  "Design a fast, scalable solution flow across data, product, automation, or cloud layers.",
+  "Build, validate, and optimize the final system for reliable delivery and long-term business use.",
 ];
 
 export const careerPoints = [

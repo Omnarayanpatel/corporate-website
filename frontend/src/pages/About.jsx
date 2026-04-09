@@ -1,9 +1,14 @@
 import { aboutPoints, companyInfo, processSteps } from "../data/companyData";
+import useRevealOnScroll from "../hooks/useRevealOnScroll";
 
 function About() {
+  const heroReveal = useRevealOnScroll({ threshold: 0.12 });
+  const storyReveal = useRevealOnScroll();
+  const processReveal = useRevealOnScroll();
+
   return (
     <main className="page-shell">
-      <section className="page-hero">
+      <section ref={heroReveal.ref} className={`page-hero reveal-section ${heroReveal.isVisible ? "is-visible" : ""}`}>
         <div className="container">
           <p className="eyebrow">About Us</p>
           <h1>{companyInfo.name}</h1>
@@ -11,7 +16,10 @@ function About() {
         </div>
       </section>
 
-      <section className="section about-story-section">
+      <section
+        ref={storyReveal.ref}
+        className={`section about-story-section reveal-section ${storyReveal.isVisible ? "is-visible" : ""}`}
+      >
         <div className="container split-section split-section--story">
           <div>
             <p className="eyebrow">Who We Are</p>
@@ -58,7 +66,10 @@ function About() {
         </div>
       </section>
 
-      <section className="section section--accent">
+      <section
+        ref={processReveal.ref}
+        className={`section section--accent reveal-section ${processReveal.isVisible ? "is-visible" : ""}`}
+      >
         <div className="container">
           <div className="section-heading">
             <div>
