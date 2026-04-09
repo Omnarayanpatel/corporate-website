@@ -1,2 +1,2 @@
-# corporate-website
-Production-ready AI SaaS corporate website with modern UI, animations, and modular architecture using React and Tailwind CSS.
+# dhritii_website
+Production-ready corporate website for Dhritii.ai with a modern React-based UI, animated service/product sections, and reusable components.
