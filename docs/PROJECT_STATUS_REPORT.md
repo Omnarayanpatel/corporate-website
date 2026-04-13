@@ -2,42 +2,53 @@
 
 ## Overall Status
 
-The website is mostly complete and already looks like a polished corporate site.
+The website is in a strong near-finished state. Core pages are built, branded, responsive, and animated, with major content expansion already completed.
 
 ### Estimated Completion
 
-**80% complete**
+**70% complete**
 
 ## What Is Done
 
-- Home page is complete
-- Services page is complete
-- Products page structure is complete
-- Footer and legal pages are added
-- Social icons are added
-- Responsive design is in place
-- Animations and reveal effects are implemented
-- Images are connected to service and product cards
-- Git repository cleanup is done
+- Home page structure and styling are in place
+- Services page has been expanded with category cards, visuals, summary listing, and CTA blocks
+- Products page includes the spotlight selector, stats, and interactive preview panel
+- Careers page has been redesigned with:
+  - hero section
+  - role cards
+  - role preview panel
+  - hiring process section
+  - application form
+  - image-based benefit cards
+- Contact page has been redesigned with map, contact details, and form UI
+- Navbar now includes a Services dropdown
+- Route structure includes dedicated service sub-pages
+- Shared motion/reveal effects are implemented
+- Responsive styling is in place
+- Visual assets are connected across pages
+- Build passes successfully
 
 ## What Is Still Pending
 
-- Product video
-- Final Contact form behavior
-- Final product-page refinement
+- Contact form submission behavior
+- Careers application form submission behavior
+- Resume upload handling
+- Backend or email integration, if needed
+- Final content and spelling QA
+- Final mobile QA on real devices
 - SEO/meta polish
-- Final testing before launch
+- Deployment or repo push to the target GitHub repository
 
 ## Time Required
 
 ### Best-case
 
 If only frontend finishing work remains:
-- **4 to 8 hours**
+- **10 to 25 hours**
 
 ### Realistic
 
-If product video, contact form, and QA are included:
+If form handling, final QA, and content polish are included:
 - **1 to 2 working days**
 
 ### If backend/email integration is needed
@@ -46,25 +57,25 @@ If product video, contact form, and QA are included:
 
 ## Requirements Needed Now
 
-- One product demo video for the Products page
-- Final contact form flow or email endpoint
-- Optional social media links for footer icons
-- Final text approval from management
+- Final decision on form handling for Contact and Careers
+- Optional resume upload requirement for Careers
+- Final social media links for footer icons, if any
+- Final text approval for polished copy
 
 ## Recommended Next Steps
 
-1. Add a product demo video
-2. Finish the Contact page form
+1. Wire the Contact form to an email or backend endpoint
+2. Wire the Careers form and add resume upload support
 3. Review mobile view on real devices
-4. Do final copy and link checks
-5. Prepare deployment or production publish
+4. Do a final content and link check
+5. Prepare deployment or push to the target GitHub repo
 
 ## Short Summary for Management
 
-The website is in a strong near-finished state. The main pages are built, branded, responsive, and animated. What remains is mostly finishing work: video, contact form, and final QA.
+The website is mostly complete and already looks like a polished corporate site. The biggest remaining items are form handling, final QA, and deployment. The design system and page structure are already in place.
 
 ## Delivery Risk
 
 Low to medium.
 
-The main risk is content readiness, not code complexity.
+The main risk is content and integration readiness, not code complexity.

@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a React + Vite corporate website for Dhritii.ai. The site is structured as a multi-page marketing site with reusable components, shared data, responsive layouts, scroll-triggered reveals, and animated service/product sections.
+This is a React + Vite corporate website for Dhritii.ai. The site is structured as a multi-page marketing experience with reusable components, shared data, responsive layouts, scroll-triggered reveals, and animated service/product/careers sections.
 
 ## Current Stack
 
@@ -16,8 +16,14 @@ This is a React + Vite corporate website for Dhritii.ai. The site is structured 
 
 ### 1. Core Site Structure
 
-- Main layout with shared navbar and footer
+- Shared navbar and footer across the site
 - Route-based pages for Home, About, Services, Products, Careers, Contact, Privacy Policy, and Terms
+- Dedicated service sub-routes:
+  - AI & ML
+  - Data Collection
+  - Development
+  - Business & Cloud
+  - Marketing
 - Responsive viewport support
 
 ### 2. Home Page
@@ -31,46 +37,85 @@ This is a React + Vite corporate website for Dhritii.ai. The site is structured 
 
 ### 3. Services Page
 
-- 6 featured service cards
-- Separate text, labels, badges, and images for each card
-- Animated borders and reveal effects
-- Scroll-triggered entry animation
+- Service category cards
+- Category images and summary tags
+- Service showcase section
+- Compact all-services summary list
+- Consultation CTA block
+- Scroll reveal motion
 
 ### 4. Products Page
 
 - Product spotlight selector
+- Product stats summary
+- Interactive preview panel
 - Detailed product cards
 - Demo/video placeholder block
-- Click animation on cards
 - CTA section for contact and services
 
-### 5. Shared Data Model
+### 5. Careers Page
+
+- Premium hero section with image and animated entrance
+- Role cards for:
+  - Frontend Developer
+  - Software Developer
+  - Full Stack Developer
+  - Senior Software Developer
+  - Backend Developer
+  - AI / Data Associate
+  - Digital Marketing Executive
+  - Business Development Intern
+- Role-specific image preview panel
+- Hiring process section
+- Application form UI
+- Brand-style `Why We Stand Out` section with:
+  - highlight strip
+  - visual card
+  - image-based icons
+  - featured card treatment
+  - hover animation
+
+### 6. Contact Page
+
+- Office/map layout
+- Google Maps embed
+- Direct contact actions
+- Inquiry form UI
+
+### 7. Shared Data Model
 
 - `companyInfo`
+- `highlights`
+- `stats`
 - `services`
+- `serviceList`
 - `featuredServices`
 - `products`
 - `aboutPoints`
 - `processSteps`
 - `careerPoints`
 
-### 6. Visual Assets
+### 8. Visual Assets
 
 - Service card images
 - Product preview images
+- Careers hero image
+- Role-specific career images
 - Brand imagery
+- SVG icon assets for careers benefit cards
 
-### 7. UX Enhancements
+### 9. UX Enhancements
 
 - Scroll reveal hook
-- Animated borders
+- Animated borders and glowing panels
 - Hover interactions
 - Mobile responsive breakpoints
-- Footer social icons and policy links
+- Improved CTA styles
+- Reduced-motion fallback for accessibility
 
 ## Current Completion Estimate
 
-Estimated completion: **85%**
+Estimated completion: **90%**
 
 ### Completed
 
@@ -79,16 +124,19 @@ Estimated completion: **85%**
 - Home page content
 - Services page content
 - Products page base + spotlight
+- Careers page redesign
+- Contact page redesign
 - Footer and legal pages
 - Responsive styling
 - Asset wiring
-- Basic motion/animation system
+- Motion/animation system
 
 ### Remaining
 
 - Real product demo video
-- Final Products page content refinement
-- Final Contact page form/action behavior
+- Final Contact form action behavior
+- Final Careers form action behavior
+- Resume upload handling
 - SEO polishing and metadata
 - Cross-browser visual QA
 - Production cleanup and final deployment check
@@ -104,6 +152,8 @@ Estimated completion: **85%**
 ### Functional
 
 - Contact form submission handling
+- Careers form submission handling
+- Resume upload support if required
 - Any backend/email integration if required
 
 ### QA
@@ -118,7 +168,7 @@ Estimated completion: **85%**
 ### If only frontend polish remains
 
 - Product video integration: 30 minutes to 1 hour
-- Contact form wiring: 2 to 4 hours
+- Contact/Careers form wiring: 2 to 4 hours
 - Final UI polish and QA: 3 to 5 hours
 
 ### Total remaining effort
