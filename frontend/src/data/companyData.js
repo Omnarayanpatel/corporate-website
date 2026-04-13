@@ -36,17 +36,28 @@ export const stats = [
 
 export const services = [
   {
-    title: "AI & Data Services",
+    title: "AI & ML Services",
     items: [
       "Data Annotation (Image, Text, Audio, Video)",
       "Medical Data Annotation",
-      "Data Collection",
       "Data Classification",
       "AI Model Support",
       "Transcription Services",
     ],
     description:
-      "Data annotation is the process of labeling, tagging, or transcribing raw data, including images, text, audio, and video, to train Artificial Intelligence (AI) and machine learning models to recognize patterns, understand context, and make accurate predictions.",
+      "End-to-end AI and machine learning solutions including data labeling, model training, fine-tuning, and production deployment to accelerate your AI initiatives.",
+  },
+  {
+    title: "Data Collection Services",
+    items: [
+      "Image Data Collection",
+      "Text Data Collection",
+      "Audio Data Collection",
+      "Video Data Collection",
+      "Survey & Feedback Collection",
+    ],
+    description:
+      "Comprehensive data gathering services to build high-quality, diverse datasets for training robust AI models and machine learning systems.",
   },
   {
     title: "Development Services",
