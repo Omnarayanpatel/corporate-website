@@ -2,17 +2,20 @@
 
 ## Overall Status
 
-The website is in a strong near-finished state. Core pages are built, branded, responsive, and animated, with major content expansion already completed.
+The website is in a strong near-finished state. Core pages are built, branded, responsive, and animated, with major content expansion already completed. The Home page now has stronger real-photo storytelling, and the About page has been fully completed with leadership, story, culture, values, and process sections. A few content-heavy pages and backend features are still pending.
 
 ### Estimated Completion
 
-**70% complete**
+**85% complete**
 
 ## What Is Done
 
 - Home page structure and styling are in place
+- Home page now includes an office photo in the `Why Dhritii.ai` story section
 - Services page has been expanded with category cards, visuals, summary listing, and CTA blocks
+- AI Services page is expanded with service-by-service detail blocks and dedicated visuals
 - Products page includes the spotlight selector, stats, and interactive preview panel
+- About page is fully completed with hero, story, leadership, mission/vision/values, team/culture, and process sections
 - Careers page has been redesigned with:
   - hero section
   - role cards
@@ -30,6 +33,11 @@ The website is in a strong near-finished state. Core pages are built, branded, r
 
 ## What Is Still Pending
 
+- Data Collection service page
+- Development service page
+- Business & Cloud service page
+- Marketing service page
+- Product page media polish for video/image sections
 - Contact form submission behavior
 - Careers application form submission behavior
 - Resume upload handling
@@ -37,7 +45,7 @@ The website is in a strong near-finished state. Core pages are built, branded, r
 - Final content and spelling QA
 - Final mobile QA on real devices
 - SEO/meta polish
-- Deployment or repo push to the target GitHub repository
+- Deployment verification and final repo sync
 
 ## Time Required
 
@@ -57,6 +65,8 @@ If form handling, final QA, and content polish are included:
 
 ## Requirements Needed Now
 
+- Final content for the remaining service pages
+- Final product media assets for video/image sections
 - Final decision on form handling for Contact and Careers
 - Optional resume upload requirement for Careers
 - Final social media links for footer icons, if any
@@ -64,18 +74,19 @@ If form handling, final QA, and content polish are included:
 
 ## Recommended Next Steps
 
-1. Wire the Contact form to an email or backend endpoint
-2. Wire the Careers form and add resume upload support
-3. Review mobile view on real devices
-4. Do a final content and link check
-5. Prepare deployment or push to the target GitHub repo
+1. Build the remaining service pages: Data Collection, Development, Business & Cloud, Marketing
+2. Polish the Products page media areas
+3. Wire the Contact and Careers forms
+4. Review mobile view on real devices
+5. Do a final content and link check
+6. Prepare deployment or final repo sync
 
 ## Short Summary for Management
 
-The website is mostly complete and already looks like a polished corporate site. The biggest remaining items are form handling, final QA, and deployment. The design system and page structure are already in place.
+The website is mostly complete and already looks like a polished corporate site. The biggest remaining items are four service pages, product media polish, form handling, and backend integration. The About page is complete, and the Home page includes an office photo for stronger brand storytelling.
 
 ## Delivery Risk
 
 Low to medium.
 
-The main risk is content and integration readiness, not code complexity.
+The main risk is content readiness and backend integration, not code complexity.

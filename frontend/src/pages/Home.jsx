@@ -3,6 +3,7 @@ import ServicesSection from "../sections/ServicesSection";
 import ProductSection from "../sections/ProductSection";
 import { aboutPoints, companyInfo, stats } from "../data/companyData";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
+import officeImage from "../assets/images/office.JPG";
 
 const processCards = [
   {
@@ -78,29 +79,38 @@ function Home() {
             </div>
           </div>
 
-          <div className="story-panel glass-panel">
-            <p className="eyebrow">Delivery Model</p>
-            <h2>Structured execution that moves from challenge to usable output.</h2>
-            <div className="story-flow">
-              <div className="story-flow__item">
-                <span>01</span>
-                <div>
-                  <strong>Discover</strong>
-                  <p>We map business pain points, data needs, and product opportunities with clarity.</p>
+          <div className="story-panel glass-panel story-panel--visual">
+            <div className="story-panel__image">
+              <img src={officeImage} alt="Dhritii.ai office workspace" loading="lazy" />
+              <div className="story-panel__badge">Our workspace</div>
+            </div>
+            <div className="story-panel__copy">
+              <p className="eyebrow">Delivery Model</p>
+              <h2>Structured execution that moves from challenge to usable output.</h2>
+              <p className="story-panel__lead">
+                We keep work practical, collaborative, and ready for real teams to use.
+              </p>
+              <div className="story-flow">
+                <div className="story-flow__item">
+                  <span>01</span>
+                  <div>
+                    <strong>Discover</strong>
+                    <p>We map business pain points, data needs, and product opportunities with clarity.</p>
+                  </div>
                 </div>
-              </div>
-              <div className="story-flow__item">
-                <span>02</span>
-                <div>
-                  <strong>Design</strong>
-                  <p>We shape practical workflows across annotation, SaaS, cloud, and automation layers.</p>
+                <div className="story-flow__item">
+                  <span>02</span>
+                  <div>
+                    <strong>Design</strong>
+                    <p>We shape practical workflows across annotation, SaaS, cloud, and automation layers.</p>
+                  </div>
                 </div>
-              </div>
-              <div className="story-flow__item">
-                <span>03</span>
-                <div>
-                  <strong>Deploy</strong>
-                  <p>We build solutions meant for real teams, real usage, and long-term scale.</p>
+                <div className="story-flow__item">
+                  <span>03</span>
+                  <div>
+                    <strong>Deploy</strong>
+                    <p>We build solutions meant for real teams, real usage, and long-term scale.</p>
+                  </div>
                 </div>
               </div>
             </div>

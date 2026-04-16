@@ -33,6 +33,7 @@ This is a React + Vite corporate website for Dhritii.ai. The site is structured 
 - Products preview section
 - Delivery/process section
 - Trust/statistics strip
+- `Why Dhritii.ai` story section with office photo and delivery model content
 - Footer integration
 
 ### 3. Services Page
@@ -44,7 +45,25 @@ This is a React + Vite corporate website for Dhritii.ai. The site is structured 
 - Consultation CTA block
 - Scroll reveal motion
 
-### 4. Products Page
+### 4. AI Services Page
+
+- Hero section with branded image and motion
+- Deep-dive sections for:
+  - Data Annotation
+  - Medical Data Annotation
+  - Data Classification
+  - AI Model Support
+  - Transcription Services
+- Annotation type cards for:
+  - Image Annotation
+  - Text Annotation
+  - Audio Annotation
+  - Video Annotation
+- Workflow section
+- Dedicated visuals for each major service card
+- CTA section for next-step content expansion
+
+### 5. Products Page
 
 - Product spotlight selector
 - Product stats summary
@@ -53,7 +72,7 @@ This is a React + Vite corporate website for Dhritii.ai. The site is structured 
 - Demo/video placeholder block
 - CTA section for contact and services
 
-### 5. Careers Page
+### 6. Careers Page
 
 - Premium hero section with image and animated entrance
 - Role cards for:
@@ -68,6 +87,8 @@ This is a React + Vite corporate website for Dhritii.ai. The site is structured 
 - Role-specific image preview panel
 - Hiring process section
 - Application form UI
+- Resume upload field
+- Custom `Other` role input support
 - Brand-style `Why We Stand Out` section with:
   - highlight strip
   - visual card
@@ -75,14 +96,14 @@ This is a React + Vite corporate website for Dhritii.ai. The site is structured 
   - featured card treatment
   - hover animation
 
-### 6. Contact Page
+### 7. Contact Page
 
 - Office/map layout
 - Google Maps embed
 - Direct contact actions
 - Inquiry form UI
 
-### 7. Shared Data Model
+### 8. Shared Data Model
 
 - `companyInfo`
 - `highlights`
@@ -94,8 +115,9 @@ This is a React + Vite corporate website for Dhritii.ai. The site is structured 
 - `aboutPoints`
 - `processSteps`
 - `careerPoints`
+- leadership image assets for About page
 
-### 8. Visual Assets
+### 9. Visual Assets
 
 - Service card images
 - Product preview images
@@ -104,7 +126,7 @@ This is a React + Vite corporate website for Dhritii.ai. The site is structured 
 - Brand imagery
 - SVG icon assets for careers benefit cards
 
-### 9. UX Enhancements
+### 10. UX Enhancements
 
 - Scroll reveal hook
 - Animated borders and glowing panels
@@ -115,7 +137,7 @@ This is a React + Vite corporate website for Dhritii.ai. The site is structured 
 
 ## Current Completion Estimate
 
-Estimated completion: **90%**
+Estimated completion: **85%**
 
 ### Completed
 
@@ -123,9 +145,12 @@ Estimated completion: **90%**
 - Routing
 - Home page content
 - Services page content
+- AI Services detail page
 - Products page base + spotlight
 - Careers page redesign
 - Contact page redesign
+- About page redesign with leadership photos, mission/vision/values, culture, and process sections
+- Home page story section with office photo
 - Footer and legal pages
 - Responsive styling
 - Asset wiring
@@ -133,10 +158,15 @@ Estimated completion: **90%**
 
 ### Remaining
 
-- Real product demo video
+- Data Collection service page
+- Development / Deployment service page
+- Business & Cloud service page
+- Marketing service page
+- Product media polish for video/image sections
 - Final Contact form action behavior
 - Final Careers form action behavior
-- Resume upload handling
+- Resume upload handling workflow
+- Backend/email integration
 - SEO polishing and metadata
 - Cross-browser visual QA
 - Production cleanup and final deployment check
@@ -145,8 +175,8 @@ Estimated completion: **90%**
 
 ### Content
 
-- Final video file for the Products page
-- Optional updated copy for product descriptions and CTAs
+- Final media assets or copy for remaining service pages
+- Final video/image support for the Products page
 - Final social URLs for footer icons
 
 ### Functional
@@ -167,13 +197,14 @@ Estimated completion: **90%**
 
 ### If only frontend polish remains
 
-- Product video integration: 30 minutes to 1 hour
+- Remaining service pages: 1 to 2 working days
+- Product media polish: 30 minutes to 2 hours
 - Contact/Careers form wiring: 2 to 4 hours
 - Final UI polish and QA: 3 to 5 hours
 
 ### Total remaining effort
 
-Estimated: **1 working day**
+Estimated: **1 to 3 working days**
 
 If backend integration or real form/email handling is needed, add **another half to full day**.
 

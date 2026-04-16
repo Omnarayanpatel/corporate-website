@@ -97,7 +97,6 @@ function Contact() {
                   <div className="contact-icon">📞</div>
                   <div>
                     <strong>Phone Support</strong>
-                    <p>{companyInfo.phone}</p>
                     <small>Mon-Sat, 10AM-7PM IST</small>
                   </div>
                 </div>
@@ -131,21 +130,21 @@ function Contact() {
               </p>
 
               <form className="contact-form" onSubmit={(event) => event.preventDefault()}>
-                <label>
+                <label htmlFor="contact-name">
                   <span>Name</span>
-                  <input type="text" name="name" placeholder="Your name" required />
+                  <input id="contact-name" type="text" name="name" placeholder="Your name" required />
                 </label>
-                <label>
+                <label htmlFor="contact-email">
                   <span>Email</span>
-                  <input type="email" name="email" placeholder="you@example.com" required />
+                  <input id="contact-email" type="email" name="email" placeholder="you@example.com" required />
                 </label>
-                <label>
+                <label htmlFor="contact-phone">
                   <span>Phone</span>
-                  <input type="tel" name="phone" placeholder="+91 755 455 7709" />
+                  <input id="contact-phone" type="tel" name="phone" placeholder="+91 755 455 7709" />
                 </label>
-                <label>
+                <label htmlFor="contact-message">
                   <span>Project details</span>
-                  <textarea name="message" placeholder="Describe your idea or challenge" required />
+                  <textarea id="contact-message" name="message" placeholder="Describe your idea or challenge" required />
                 </label>
                 <button type="submit" className="contact-form-submit">
                   Send Inquiry

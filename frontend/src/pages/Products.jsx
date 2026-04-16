@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import { products } from "../data/companyData";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
 
+const productCounts = {
+  live: products.filter((product) => product.status === "Live Product").length,
+  comingSoon: products.filter((product) => product.status !== "Live Product").length,
+};
+
 function Products() {
   const heroReveal = useRevealOnScroll({ threshold: 0.12 });
   const spotlightReveal = useRevealOnScroll();
@@ -11,11 +16,6 @@ function Products() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [clickedIndex, setClickedIndex] = useState(null);
   const activeProduct = products[selectedIndex];
-
-  const productCounts = {
-    live: products.filter((product) => product.status === "Live Product").length,
-    comingSoon: products.filter((product) => product.status !== "Live Product").length,
-  };
 
   const handleSelect = (index) => {
     setSelectedIndex(index);
