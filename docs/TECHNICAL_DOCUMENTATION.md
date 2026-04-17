@@ -117,7 +117,14 @@ This is a React + Vite corporate website for Dhritii.ai. The site is structured 
 - `careerPoints`
 - leadership image assets for About page
 
-### 9. Visual Assets
+### 9. Remaining Service Pages
+
+- Data Collection service page with detailed track cards and matching images
+- Development service page with a distinct hero and 4 focused tracks
+- Business & Cloud service page with SaaS, cloud, automation, security, and BI tracks
+- Marketing service page with a brand-led hero and campaign-oriented tracks
+
+### 10. Visual Assets
 
 - Service card images
 - Product preview images
@@ -126,7 +133,7 @@ This is a React + Vite corporate website for Dhritii.ai. The site is structured 
 - Brand imagery
 - SVG icon assets for careers benefit cards
 
-### 10. UX Enhancements
+### 11. UX Enhancements
 
 - Scroll reveal hook
 - Animated borders and glowing panels
@@ -137,7 +144,7 @@ This is a React + Vite corporate website for Dhritii.ai. The site is structured 
 
 ## Current Completion Estimate
 
-Estimated completion: **85%**
+Estimated completion: **90%**
 
 ### Completed
 
@@ -151,6 +158,10 @@ Estimated completion: **85%**
 - Contact page redesign
 - About page redesign with leadership photos, mission/vision/values, culture, and process sections
 - Home page story section with office photo
+- Data Collection page redesign with detailed image-led tracks
+- Development page redesign with 4 focused service tracks
+- Business & Cloud page redesign with 5 image-led service tracks
+- Marketing page redesign with a brand-focused visual system
 - Footer and legal pages
 - Responsive styling
 - Asset wiring
@@ -158,10 +169,6 @@ Estimated completion: **85%**
 
 ### Remaining
 
-- Data Collection service page
-- Development / Deployment service page
-- Business & Cloud service page
-- Marketing service page
 - Product media polish for video/image sections
 - Final Contact form action behavior
 - Final Careers form action behavior
@@ -188,7 +195,6 @@ Estimated completion: **85%**
 
 ### QA
 
-- Mobile testing on small screens
 - Browser testing in Chrome, Edge, and Firefox
 - Link validation
 - Performance review

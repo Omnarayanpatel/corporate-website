@@ -2,11 +2,11 @@
 
 ## Overall Status
 
-The website is in a strong near-finished state. Core pages are built, branded, responsive, and animated, with major content expansion already completed. The Home page now has stronger real-photo storytelling, and the About page has been fully completed with leadership, story, culture, values, and process sections. A few content-heavy pages and backend features are still pending.
+The website is in a strong near-finished state. Core pages are built, branded, responsive, and animated, with major content expansion already completed. The Home page now has stronger real-photo storytelling, the About page is fully completed, and the remaining service pages have now been built and styled as well. Only a smaller set of polish, backend, and deployment tasks remain.
 
 ### Estimated Completion
 
-**85% complete**
+**90% complete**
 
 ## What Is Done
 
@@ -14,6 +14,10 @@ The website is in a strong near-finished state. Core pages are built, branded, r
 - Home page now includes an office photo in the `Why Dhritii.ai` story section
 - Services page has been expanded with category cards, visuals, summary listing, and CTA blocks
 - AI Services page is expanded with service-by-service detail blocks and dedicated visuals
+- Data Collection service page has been built with detailed tracks and matching visuals
+- Development service page has been built with a distinct layout and 4 detailed tracks
+- Business & Cloud service page has been built with a distinct layout and 5 detailed tracks
+- Marketing service page has been built with a brand-led layout and 5 detailed tracks
 - Products page includes the spotlight selector, stats, and interactive preview panel
 - About page is fully completed with hero, story, leadership, mission/vision/values, team/culture, and process sections
 - Careers page has been redesigned with:
@@ -33,17 +37,12 @@ The website is in a strong near-finished state. Core pages are built, branded, r
 
 ## What Is Still Pending
 
-- Data Collection service page
-- Development service page
-- Business & Cloud service page
-- Marketing service page
 - Product page media polish for video/image sections
 - Contact form submission behavior
 - Careers application form submission behavior
 - Resume upload handling
 - Backend or email integration, if needed
 - Final content and spelling QA
-- Final mobile QA on real devices
 - SEO/meta polish
 - Deployment verification and final repo sync
 
@@ -74,16 +73,15 @@ If form handling, final QA, and content polish are included:
 
 ## Recommended Next Steps
 
-1. Build the remaining service pages: Data Collection, Development, Business & Cloud, Marketing
-2. Polish the Products page media areas
-3. Wire the Contact and Careers forms
-4. Review mobile view on real devices
-5. Do a final content and link check
-6. Prepare deployment or final repo sync
+1. Polish the Products page media areas
+2. Wire the Contact and Careers forms
+3. Review mobile view on real devices
+4. Do a final content and link check
+5. Prepare deployment or final repo sync
 
 ## Short Summary for Management
 
-The website is mostly complete and already looks like a polished corporate site. The biggest remaining items are four service pages, product media polish, form handling, and backend integration. The About page is complete, and the Home page includes an office photo for stronger brand storytelling.
+The website is mostly complete and already looks like a polished corporate site. The biggest remaining items are product media polish, form handling, backend integration, and final deployment checks. The About page is complete, the Home page includes an office photo for stronger brand storytelling, and the remaining service pages are now in place.
 
 ## Delivery Risk
 
